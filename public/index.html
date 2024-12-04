@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Food Donation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Local Food Donation</h1>
+
+    <section>
+      <h2>Post Food</h2>
+      <form id="foodForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="text" id="location" placeholder="Your Location" required />
+        <textarea id="description" placeholder="Food Description" required></textarea>
+        <button type="submit">Post Food</button>
+      </form>
+    </section>
+
+    <section id="foodSection" style="display: none;">
+      <h2>Available Foods</h2>
+      <ul id="foodList"></ul>
+    </section>
+
+    <div id="requestModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Request Food</h2>
+        <form id="requestForm">
+          <input type="text" id="requesterName" placeholder="Your Name" required />
+          <input type="text" id="requesterLocation" placeholder="Your Location" required />
+          <button type="submit">Submit Request</button>
+          <button id="closeModal">Close</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
